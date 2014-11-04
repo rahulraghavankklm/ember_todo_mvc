@@ -9,17 +9,15 @@ Todo.reopenClass({
 	FIXTURES: [
 		{
 			id: "1",
-			title: "Ember.js App",
+			title: 'Ember.js App',
 			isCompleted: false
-		},
-		{
+		}, {
 			id: "2",
-			title: "Leaning Ember.js TodoMVC",
+			title: 'Leaning Ember.js TodoMVC',
 			isCompleted: false
-		},
-		{
+		}, {
 			id: "3",
-			title: "Develop Amazing Things",
+			title: 'Develop Amazing Things',
 			isCompleted: true
 		}
 	]
