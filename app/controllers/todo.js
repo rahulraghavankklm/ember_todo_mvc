@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.ObjectController.extend({
 	
-	actions: function() {
+	actions: {
 		editTodo: function() {
 			this.set('isEditing', true);
 		}
@@ -10,7 +10,7 @@ export default Ember.ObjectController.extend({
 
 	acceptChanges: function() {
 		this.set('isEditing', false);
-		
+
         if (Ember.isEmpty(this.get('model.title'))) {
           this.send('removeTodo');
         } else {
