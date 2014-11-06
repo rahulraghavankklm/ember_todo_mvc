@@ -6,10 +6,14 @@
 
   <section id="main">
     <ul id="todo-list">
-  	{{#each}}
-        <li {{bind-attr class="isCompleted:completed"}}>
+  	{{#each itemController="todo"}}
+        <li {{bind-attr class="isCompleted:completed isEditing:editing"}}>
+        {{#if isEditing}}
+          <input class="edit">
+        {{else}}
           {{input type="checkbox" checked=isCompleted class="toggle"}}
           <label>{{title}}</label><button class="destroy"></button>
+        {{/if}}
         </li>
   	{{/each}}
     </ul>
