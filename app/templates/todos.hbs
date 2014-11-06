@@ -15,7 +15,8 @@
                        autofocus="autofocus"}}
         {{else}}
           {{input type="checkbox" checked=isCompleted class="toggle"}}
-          <label>{{title}}</label><button class="destroy"></button>
+          <label>{{title}}</label>
+          <button {{action "removeTodo"}} class="destroy"></button>
         {{/if}}
         </li>
   	{{/each}}
